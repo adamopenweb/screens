@@ -29,7 +29,7 @@ for i in "${!list[@]}"; do
       echo "Wait for page load..";
       # Screencapture has a timer built in, 40 seconds in this case, adjust this and path as required
       # If testing pages other than domain root change $site to something else like $i for example
-      screencapture -t jpg -T 5 -l $gcwindow -x ~/Desktop/screens/firefoxtest/$site.jpg;
+      screencapture -t jpg -T 40 -l $gcwindow -x ~/Desktop/screens/firefoxtest/$site.jpg;
       echo "Captured screenshot"
       echo "Close browser window"
       pkill -f "Firefox"; # Kill firefox
