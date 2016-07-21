@@ -41,7 +41,7 @@ firefox(){
   echo "Wait for page load..";
   # Screencapture has a timer built in, 40 seconds in this case, adjust this and path as required
   # If testing pages other than domain root change $site to something else like $i for example
-  screencapture -t png -T 1 -o -l $gcwindow -x  $path'firefox'/$site.png;
+  screencapture -t png -T 40 -o -l $gcwindow -x  $path'firefox'/$site.png;
   echo "Captured screenshot"
   echo "Close browser window"
   pkill -f "Firefox"; # Kill firefox
@@ -65,7 +65,7 @@ chrome(){
   echo "Wait for page load..";
   # Screencapture has a timer built in, 40 seconds in this case, adjust this and path as required
   # If testing pages other than domain root change $site to something else like $i for example
-  screencapture -t png -T 1 -o -l $gcwindow -x $path'chrome'/$site.png;
+  screencapture -t png -T 40 -o -l $gcwindow -x $path'chrome'/$site.png;
   echo "Captured screenshot";
   echo "Close browser window";
   pkill -a -i "Google Chrome"; # Kill Chrome
