@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: screens
+  annotations:
+    github.com/project-slug: adamopenweb/screens
+spec:
+  type: other
+  lifecycle: unknown
+  owner: team-a
